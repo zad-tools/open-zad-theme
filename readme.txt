@@ -47,7 +47,7 @@ Yes. It declares wide-alignment, responsive-embeds, and editor styles so block c
 
 == Copyright ==
 
-Open ZAD Theme, Copyright 2024-2026 Ahmed Morsy.
+Open ZAD Theme, Copyright 2024-2026 Ahmed Nabil.
 Open ZAD Theme is distributed under the terms of the GNU GPL v2 or later.
 
 This theme uses the following resource at build time only (it is not shipped as a runtime dependency):

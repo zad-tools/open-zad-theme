@@ -1,4 +1,4 @@
-# Copyright (C) 2026 Ahmed Morsy
+# Copyright (C) 2026 Ahmed Nabil
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
@@ -27,7 +27,7 @@ msgid "A fast, accessible, RTL-first WordPress theme with a clean, utilitarian d
 msgstr ""
 
 #. Author of the theme
-msgid "Ahmed Morsy"
+msgid "Ahmed Nabil"
 msgstr ""
 
 #. Author URI of the theme

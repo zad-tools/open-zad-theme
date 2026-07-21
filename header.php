@@ -76,6 +76,12 @@
 			</nav>
 		<?php endif; ?>
 	</div>
+
+	<?php if ( has_header_image() ) : ?>
+		<div class="site-header-image">
+			<?php the_header_image_tag( array( 'class' => 'block w-full h-auto' ) ); ?>
+		</div>
+	<?php endif; ?>
 </header>
 
 <div id="content" class="site-content flex-1">

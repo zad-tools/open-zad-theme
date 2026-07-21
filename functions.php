@@ -51,6 +51,26 @@ if ( ! function_exists( 'open_zad_setup' ) ) {
 			)
 		);
 
+		add_theme_support(
+			'custom-header',
+			array(
+				'default-image' => '',
+				'width'         => 1600,
+				'height'        => 400,
+				'flex-width'    => true,
+				'flex-height'   => true,
+				'header-text'   => false,
+			)
+		);
+
+		add_theme_support(
+			'custom-background',
+			array(
+				'default-color' => 'ffffff',
+				'default-image' => '',
+			)
+		);
+
 		add_theme_support( 'align-wide' );
 		add_theme_support( 'responsive-embeds' );
 		add_theme_support( 'wp-block-styles' );
@@ -157,3 +177,5 @@ add_filter( 'body_class', 'open_zad_body_classes' );
 
 require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/block-styles.php';
+require get_template_directory() . '/inc/block-patterns.php';

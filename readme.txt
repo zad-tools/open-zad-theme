@@ -3,7 +3,7 @@ Contributors: ahmedvnabil
 Requires at least: 6.5
 Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, news, two-columns, right-sidebar, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, rtl-language-support, block-styles, wide-blocks, sticky-post, footer-widgets
@@ -60,6 +60,11 @@ The compiled stylesheet source (src/input.css + tailwind.config.js) is included 
 screenshot.png is a rendering of this theme itself; the featured-image graphic shown in it is self-authored by the theme author. Both are licensed under GPL-2.0-or-later.
 
 == Changelog ==
+
+= 1.0.1 =
+* Add Customizer support for a custom background and an optional header image.
+* Add three block styles (Bordered quote, Framed image, Bordered card group).
+* Add two block patterns (Call to action card, Three-column features) under an "Open ZAD" category.
 
 = 1.0.0 =
 * Initial release.

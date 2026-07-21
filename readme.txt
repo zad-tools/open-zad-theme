@@ -3,7 +3,7 @@ Contributors: ahmedvnabil
 Requires at least: 6.5
 Tested up to: 6.7
 Requires PHP: 8.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, news, two-columns, right-sidebar, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, rtl-language-support, block-styles, wide-blocks, sticky-post, footer-widgets
@@ -60,6 +60,9 @@ The compiled stylesheet source (src/input.css + tailwind.config.js) is included 
 screenshot.png is a rendering of this theme itself; the featured-image graphic shown in it is self-authored by the theme author. Both are licensed under GPL-2.0-or-later.
 
 == Changelog ==
+
+= 1.0.3 =
+* Refresh the theme screenshot with a lighter, on-brand featured image.
 
 = 1.0.2 =
 * Point the Theme URI at the theme's GitHub repository.

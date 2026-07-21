@@ -1,5 +1,5 @@
 === Open ZAD ===
-Contributors: ahmedmorsy
+Contributors: ahmedvnabil
 Requires at least: 6.5
 Tested up to: 6.7
 Requires PHP: 8.0

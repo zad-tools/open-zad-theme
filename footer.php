@@ -18,7 +18,7 @@
 
 	<div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
 		<?php if ( has_nav_menu( 'footer' ) ) : ?>
-			<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'open-zad-theme' ); ?>">
+			<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'open-zad' ); ?>">
 				<?php
 				wp_nav_menu(
 					array(
@@ -37,7 +37,7 @@
 			<?php
 			printf(
 				/* translators: 1: current year, 2: site name. */
-				esc_html__( '© %1$s %2$s.', 'open-zad-theme' ),
+				esc_html__( '© %1$s %2$s.', 'open-zad' ),
 				esc_html( wp_date( 'Y' ) ),
 				esc_html( get_bloginfo( 'name' ) )
 			);

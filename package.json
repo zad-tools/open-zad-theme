@@ -1,5 +1,5 @@
 {
-  "name": "open-zad-theme",
+  "name": "open-zad",
   "version": "1.0.0",
   "private": true,
   "description": "Build tooling for Open ZAD Theme — compiles src/input.css to assets/css/main.css with Tailwind. Not shipped to end users; source is included for transparency.",

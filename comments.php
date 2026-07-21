@@ -17,11 +17,11 @@ if ( post_password_required() ) {
 			<?php
 			$open_zad_comment_count = get_comments_number();
 			if ( '1' === $open_zad_comment_count ) {
-				esc_html_e( 'One comment', 'open-zad-theme' );
+				esc_html_e( 'One comment', 'open-zad' );
 			} else {
 				printf(
 					/* translators: %s: comment count number. */
-					esc_html( _n( '%s comment', '%s comments', $open_zad_comment_count, 'open-zad-theme' ) ),
+					esc_html( _n( '%s comment', '%s comments', $open_zad_comment_count, 'open-zad' ) ),
 					esc_html( number_format_i18n( $open_zad_comment_count ) )
 				);
 			}
@@ -43,8 +43,8 @@ if ( post_password_required() ) {
 		<?php
 		the_comments_pagination(
 			array(
-				'prev_text' => esc_html__( 'Previous', 'open-zad-theme' ),
-				'next_text' => esc_html__( 'Next', 'open-zad-theme' ),
+				'prev_text' => esc_html__( 'Previous', 'open-zad' ),
+				'next_text' => esc_html__( 'Next', 'open-zad' ),
 			)
 		);
 		?>
@@ -52,7 +52,7 @@ if ( post_password_required() ) {
 	<?php endif; ?>
 
 	<?php if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
-		<p class="no-comments text-text-muted"><?php esc_html_e( 'Comments are closed.', 'open-zad-theme' ); ?></p>
+		<p class="no-comments text-text-muted"><?php esc_html_e( 'Comments are closed.', 'open-zad' ); ?></p>
 	<?php endif; ?>
 
 	<?php comment_form(); ?>

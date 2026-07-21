@@ -1,4 +1,4 @@
-=== Open ZAD Theme ===
+=== Open ZAD ===
 Contributors: ahmedmorsy
 Requires at least: 6.5
 Tested up to: 6.7
@@ -57,7 +57,7 @@ This theme uses the following resource at build time only (it is not shipped as 
 
 The compiled stylesheet source (src/input.css + tailwind.config.js) is included in the theme for transparency; rebuild with `npm install && npm run build`.
 
-The screenshot.png image is self-authored by the theme author and licensed under GPL-2.0-or-later.
+screenshot.png is a rendering of this theme itself; the featured-image graphic shown in it is self-authored by the theme author. Both are licensed under GPL-2.0-or-later.
 
 == Changelog ==
 

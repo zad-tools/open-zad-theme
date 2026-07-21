@@ -19,7 +19,7 @@
 <?php wp_body_open(); ?>
 
 <a class="skip-link screen-reader-text sr-only focus:not-sr-only focus:absolute focus:top-2 focus:start-2 focus:z-50 focus:bg-primary focus:text-white focus:px-4 focus:py-2" href="#content">
-	<?php esc_html_e( 'Skip to content', 'open-zad-theme' ); ?>
+	<?php esc_html_e( 'Skip to content', 'open-zad' ); ?>
 </a>
 
 <header id="masthead" class="site-header border-b border-border bg-surface">
@@ -51,10 +51,10 @@
 		</div>
 
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
-			<nav id="site-navigation" class="main-navigation relative" aria-label="<?php esc_attr_e( 'Primary Menu', 'open-zad-theme' ); ?>">
+			<nav id="site-navigation" class="main-navigation relative" aria-label="<?php esc_attr_e( 'Primary Menu', 'open-zad' ); ?>">
 				<button type="button" class="menu-toggle sm:hidden inline-flex items-center gap-2 border border-border px-3 py-2 text-sm font-bold"
 					aria-expanded="false" aria-controls="primary-menu-wrap">
-					<span class="sr-only"><?php esc_html_e( 'Toggle menu', 'open-zad-theme' ); ?></span>
+					<span class="sr-only"><?php esc_html_e( 'Toggle menu', 'open-zad' ); ?></span>
 					<span aria-hidden="true">☰</span>
 				</button>
 

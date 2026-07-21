@@ -33,9 +33,9 @@ get_header();
 			the_posts_pagination(
 				array(
 					'mid_size'           => 1,
-					'prev_text'          => esc_html__( 'Previous', 'open-zad-theme' ),
-					'next_text'          => esc_html__( 'Next', 'open-zad-theme' ),
-					'screen_reader_text' => esc_html__( 'Posts navigation', 'open-zad-theme' ),
+					'prev_text'          => esc_html__( 'Previous', 'open-zad' ),
+					'next_text'          => esc_html__( 'Next', 'open-zad' ),
+					'screen_reader_text' => esc_html__( 'Posts navigation', 'open-zad' ),
 					'class'              => 'pagination mt-12 flex flex-wrap gap-2 [&_.page-numbers]:inline-flex [&_.page-numbers]:items-center [&_.page-numbers]:justify-center [&_.page-numbers]:min-w-[2.5rem] [&_.page-numbers]:h-10 [&_.page-numbers]:px-3 [&_.page-numbers]:border [&_.page-numbers]:border-border [&_.current]:bg-primary [&_.current]:text-white',
 				)
 			);

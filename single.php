@@ -19,8 +19,8 @@ get_header();
 
 			the_post_navigation(
 				array(
-					'prev_text' => '<span class="nav-subtitle text-xs text-text-muted">' . esc_html__( 'Previous', 'open-zad-theme' ) . '</span> <span class="nav-title font-bold">%title</span>',
-					'next_text' => '<span class="nav-subtitle text-xs text-text-muted">' . esc_html__( 'Next', 'open-zad-theme' ) . '</span> <span class="nav-title font-bold">%title</span>',
+					'prev_text' => '<span class="nav-subtitle text-xs text-text-muted">' . esc_html__( 'Previous', 'open-zad' ) . '</span> <span class="nav-title font-bold">%title</span>',
+					'next_text' => '<span class="nav-subtitle text-xs text-text-muted">' . esc_html__( 'Next', 'open-zad' ) . '</span> <span class="nav-title font-bold">%title</span>',
 					'class'     => 'post-navigation mt-12 grid gap-4 sm:grid-cols-2 [&_a]:block [&_a]:border [&_a]:border-border [&_a]:p-4 [&_a]:text-text [&_a:hover]:border-primary',
 				)
 			);

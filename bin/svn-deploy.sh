@@ -3,7 +3,7 @@
 # Deploy a version of Open ZAD Theme to the WordPress.org themes SVN.
 #
 # ONLY run this AFTER the theme has been approved and you have SVN access at
-# https://themes.svn.wordpress.org/open-zad-theme/ . Themes SVN uses one
+# https://themes.svn.wordpress.org/open-zad/ . Themes SVN uses one
 # directory per version (there is no trunk/tags split like plugins).
 #
 # Usage:
@@ -17,7 +17,7 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-SLUG="open-zad-theme"
+SLUG="open-zad"
 SVN_URL="https://themes.svn.wordpress.org/${SLUG}"
 
 if ! command -v svn >/dev/null 2>&1; then

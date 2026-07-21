@@ -87,6 +87,12 @@
 	height: auto;
 }
 
+iframe,
+embed,
+object {
+	max-width: 100%;
+}
+
 .entry-content a {
 	color: rgb(var(--color-primary));
 	text-decoration: underline;
@@ -100,4 +106,386 @@
 
 .entry-content code {
 	font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.entry-content table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.entry-content th,
+.entry-content td {
+	border: 1px solid rgb(var(--color-border));
+	padding: 0.5rem 0.75rem;
+	text-align: start;
+}
+
+/* ----------------------------------------------------------------------
+ * Primary navigation sub-menus.
+ *
+ * Desktop: absolutely-positioned dropdown opened on hover or keyboard
+ * focus (:focus-within). Mobile (the stacked panel): sub-menus render
+ * inline, indented, always visible.
+ * ------------------------------------------------------------------- */
+
+.main-navigation .sub-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+@media (min-width: 640px) {
+	.main-navigation .menu-item-has-children {
+		position: relative;
+	}
+
+	.main-navigation .menu-item-has-children > a::after {
+		content: "\25BE";
+		margin-inline-start: 0.25rem;
+		font-size: 0.75em;
+	}
+
+	.main-navigation .sub-menu {
+		position: absolute;
+		inset-inline-start: 0;
+		top: 100%;
+		z-index: 50;
+		min-width: 12rem;
+		display: none;
+		flex-direction: column;
+		gap: 0;
+		border: 1px solid rgb(var(--color-border));
+		background: rgb(var(--color-surface));
+		padding: 0.5rem 0;
+	}
+
+	.main-navigation .sub-menu .sub-menu {
+		inset-inline-start: 100%;
+		top: 0;
+	}
+
+	.main-navigation .sub-menu a {
+		display: block;
+		padding: 0.5rem 1rem;
+		white-space: nowrap;
+	}
+
+	.main-navigation .menu-item-has-children:hover > .sub-menu,
+	.main-navigation .menu-item-has-children:focus-within > .sub-menu {
+		display: flex;
+	}
+}
+
+@media (max-width: 639.98px) {
+	.main-navigation .sub-menu {
+		margin-inline-start: 1rem;
+		margin-block-start: 0.75rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+}
+
+/* ----------------------------------------------------------------------
+ * WordPress core classes (required by the theme review guidelines).
+ * ------------------------------------------------------------------- */
+
+.screen-reader-text {
+	border: 0;
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: rgb(var(--color-surface));
+	clip-path: none;
+	color: rgb(var(--color-text));
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	inset-inline-start: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+.alignleft {
+	float: left;
+	margin: 0.5rem 1.5rem 1rem 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0.5rem 0 1rem 1.5rem;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-inline: auto;
+}
+
+.alignwide {
+	margin-inline: auto;
+	max-width: 64rem;
+}
+
+.alignfull {
+	margin-inline: auto;
+	max-width: 100%;
+}
+
+.wp-caption {
+	max-width: 100%;
+	margin-block-end: 1.25rem;
+}
+
+.wp-caption img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.wp-caption-text,
+.wp-caption .wp-caption-text {
+	color: rgb(var(--color-text-muted));
+	font-size: 0.875rem;
+	margin-block-start: 0.5rem;
+	text-align: center;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1rem;
+	margin-block: 1.25rem;
+}
+
+.gallery-columns-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.gallery-columns-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.gallery-columns-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.gallery-columns-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.gallery-columns-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.gallery-columns-7 { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.gallery-columns-8 { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+.gallery-columns-9 { grid-template-columns: repeat(9, minmax(0, 1fr)); }
+
+.gallery-item {
+	margin: 0;
+}
+
+.gallery-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.gallery-caption {
+	color: rgb(var(--color-text-muted));
+	font-size: 0.8125rem;
+	margin-block-start: 0.375rem;
+	text-align: center;
+}
+
+/* Sticky posts: highlighted card border. (Class is added by post_class().) */
+.post-list .sticky,
+article.sticky {
+	border-color: rgb(var(--color-primary));
+}
+
+/* Post-author comments: subtle marker on the avatar. */
+.bypostauthor > .comment-body,
+.bypostauthor {
+	position: relative;
+}
+
+.bypostauthor > article .avatar,
+.bypostauthor .avatar {
+	outline: 2px solid rgb(var(--color-primary));
+	outline-offset: 1px;
+}
+
+/* ----------------------------------------------------------------------
+ * Comments list — default wp_list_comments() markup.
+ * ------------------------------------------------------------------- */
+
+.comment-list,
+.comment-list .children {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.comment-list .children {
+	margin-inline-start: 1.5rem;
+	margin-block-start: 1.5rem;
+}
+
+.comment-list > li + li {
+	margin-block-start: 1.5rem;
+}
+
+.comment-body {
+	border: 1px solid rgb(var(--color-border));
+	background: rgb(var(--color-surface));
+	padding: 1.25rem;
+}
+
+.comment-body .comment-meta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem 1rem;
+	margin-block-end: 0.75rem;
+	font-size: 0.875rem;
+}
+
+.comment-body .comment-author {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: 700;
+}
+
+.comment-body .comment-author .avatar {
+	width: 2rem;
+	height: 2rem;
+}
+
+.comment-body .comment-metadata {
+	color: rgb(var(--color-text-muted));
+}
+
+.comment-content {
+	overflow-wrap: break-word;
+}
+
+.comment-content > * + * {
+	margin-block-start: 1rem;
+}
+
+.comment-content pre {
+	overflow-x: auto;
+	background: rgb(var(--color-surface-alt));
+	padding: 1rem;
+	max-width: 100%;
+}
+
+.comment-content table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.comment-content th,
+.comment-content td {
+	border: 1px solid rgb(var(--color-border));
+	padding: 0.375rem 0.625rem;
+	text-align: start;
+}
+
+.comment-content ul,
+.comment-content ol {
+	padding-inline-start: 1.5rem;
+	list-style: disc;
+}
+
+.comment-content ol {
+	list-style: decimal;
+}
+
+.comment-content a {
+	color: rgb(var(--color-primary));
+	text-decoration: underline;
+}
+
+.comment-content img {
+	max-width: 100%;
+	height: auto;
+}
+
+.comment-body .comment-metadata a {
+	color: inherit;
+}
+
+.comment-body .reply {
+	margin-block-start: 0.75rem;
+	font-size: 0.875rem;
+	font-weight: 700;
+}
+
+.comment-body .reply a {
+	color: rgb(var(--color-primary));
+}
+
+.comment-form label {
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 700;
+	margin-block-end: 0.25rem;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form textarea {
+	width: 100%;
+	border: 1px solid rgb(var(--color-border));
+	background: rgb(var(--color-surface));
+	padding: 0.625rem 1rem;
+	margin-block-end: 1rem;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+	outline: none;
+	border-color: rgb(var(--color-primary));
+}
+
+.comment-form .submit {
+	border: 1px solid rgb(var(--color-primary));
+	background: rgb(var(--color-primary));
+	color: #fff;
+	font-weight: 700;
+	padding: 0.625rem 1.5rem;
+	cursor: pointer;
+}
+
+.comment-form .submit:hover {
+	opacity: 0.9;
+}
+
+/* Comments/posts pagination fallback for core-generated markup. */
+.navigation.pagination .nav-links,
+.comments-pagination .nav-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-block-start: 1.5rem;
+}
+
+.navigation .page-numbers {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 2.5rem;
+	height: 2.5rem;
+	padding-inline: 0.75rem;
+	border: 1px solid rgb(var(--color-border));
+	color: rgb(var(--color-text));
+}
+
+.navigation .page-numbers.current {
+	background: rgb(var(--color-primary));
+	border-color: rgb(var(--color-primary));
+	color: #fff;
 }

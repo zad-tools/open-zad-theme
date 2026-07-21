@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 #
-# Build the WordPress.org submission zip: dist/open-zad-theme.zip
+# Build the WordPress.org submission zip: dist/open-zad.zip
 #
-# Stages the theme files under dist/open-zad-theme/ (so the folder inside the
+# Stages the theme files under dist/open-zad/ (so the folder inside the
 # zip is the theme slug) and zips it. Repo tooling is excluded; the Tailwind
 # source (src/, tailwind.config.js, package.json) is kept for transparency.
 #
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-SLUG="open-zad-theme"
+SLUG="open-zad"
 DIST="${REPO_ROOT}/dist"
 STAGE="${DIST}/${SLUG}"
 ZIP="${DIST}/${SLUG}.zip"
@@ -25,6 +25,7 @@ mkdir -p "${STAGE}"
 
 rsync -a "${REPO_ROOT}/" "${STAGE}/" \
 	--exclude ".git" \
+	--exclude ".claude" \
 	--exclude ".gitignore" \
 	--exclude ".editorconfig" \
 	--exclude "node_modules" \

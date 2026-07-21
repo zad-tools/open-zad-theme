@@ -29,7 +29,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Post title. Only visible to screen readers. */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'open-zad-theme' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'open-zad' ),
 					array( 'span' => array( 'class' => array() ) )
 				),
 				wp_kses_post( get_the_title() )
@@ -38,7 +38,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links mt-6 flex flex-wrap gap-2">' . esc_html__( 'Pages:', 'open-zad-theme' ) . ' ',
+				'before' => '<div class="page-links mt-6 flex flex-wrap gap-2">' . esc_html__( 'Pages:', 'open-zad' ) . ' ',
 				'after'  => '</div>',
 			)
 		);

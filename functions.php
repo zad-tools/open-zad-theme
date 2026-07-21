@@ -20,7 +20,7 @@ if ( ! function_exists( 'open_zad_setup' ) ) {
 	 * Register theme support features and navigation menus.
 	 */
 	function open_zad_setup() {
-		load_theme_textdomain( 'open-zad-theme', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'open-zad', get_template_directory() . '/languages' );
 
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
@@ -59,8 +59,8 @@ if ( ! function_exists( 'open_zad_setup' ) ) {
 
 		register_nav_menus(
 			array(
-				'primary' => __( 'Primary Menu', 'open-zad-theme' ),
-				'footer'  => __( 'Footer Menu', 'open-zad-theme' ),
+				'primary' => __( 'Primary Menu', 'open-zad' ),
+				'footer'  => __( 'Footer Menu', 'open-zad' ),
 			)
 		);
 	}
@@ -81,9 +81,9 @@ add_action( 'after_setup_theme', 'open_zad_content_width', 0 );
 function open_zad_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => __( 'Sidebar', 'open-zad-theme' ),
+			'name'          => __( 'Sidebar', 'open-zad' ),
 			'id'            => 'sidebar-1',
-			'description'   => __( 'Widgets shown in the sidebar on blog and archive views.', 'open-zad-theme' ),
+			'description'   => __( 'Widgets shown in the sidebar on blog and archive views.', 'open-zad' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s mb-8 border border-border bg-surface p-6">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title text-sm font-bold uppercase tracking-wider text-text-muted mb-4">',
@@ -93,9 +93,9 @@ function open_zad_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => __( 'Footer', 'open-zad-theme' ),
+			'name'          => __( 'Footer', 'open-zad' ),
 			'id'            => 'footer-1',
-			'description'   => __( 'Widgets shown in the site footer.', 'open-zad-theme' ),
+			'description'   => __( 'Widgets shown in the site footer.', 'open-zad' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title text-sm font-bold uppercase tracking-wider text-text-muted mb-4">',

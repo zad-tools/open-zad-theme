@@ -13,7 +13,7 @@
 	<header class="entry-header">
 		<?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
 			<span class="sticky-badge inline-block mb-3 text-xs font-bold uppercase tracking-wider text-primary border border-primary px-2 py-1">
-				<?php esc_html_e( 'Featured', 'open-zad-theme' ); ?>
+				<?php esc_html_e( 'Featured', 'open-zad' ); ?>
 			</span>
 		<?php endif; ?>
 
@@ -35,7 +35,7 @@
 
 	<footer class="entry-footer mt-6">
 		<a class="read-more inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline" href="<?php the_permalink(); ?>">
-			<?php esc_html_e( 'Read more', 'open-zad-theme' ); ?>
+			<?php esc_html_e( 'Read more', 'open-zad' ); ?>
 			<span aria-hidden="true">&rarr;</span>
 		</a>
 	</footer>

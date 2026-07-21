@@ -50,7 +50,7 @@ if ( ! function_exists( 'open_zad_posted_by' ) ) {
 	function open_zad_posted_by() {
 		printf(
 			'<span class="byline text-text-muted text-sm">%1$s <a class="url fn n text-text hover:text-primary" href="%2$s">%3$s</a></span>',
-			esc_html__( 'by', 'open-zad-theme' ),
+			esc_html__( 'by', 'open-zad' ),
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			esc_html( get_the_author() )
 		);
@@ -70,7 +70,7 @@ if ( ! function_exists( 'open_zad_entry_footer' ) ) {
 		if ( $categories ) {
 			printf(
 				'<div class="cat-links text-sm text-text-muted mt-4">%1$s %2$s</div>',
-				esc_html__( 'Posted in', 'open-zad-theme' ),
+				esc_html__( 'Posted in', 'open-zad' ),
 				wp_kses_post( $categories )
 			);
 		}
@@ -79,7 +79,7 @@ if ( ! function_exists( 'open_zad_entry_footer' ) ) {
 		if ( $tags ) {
 			printf(
 				'<div class="tags-links text-sm text-text-muted mt-2">%1$s %2$s</div>',
-				esc_html__( 'Tagged', 'open-zad-theme' ),
+				esc_html__( 'Tagged', 'open-zad' ),
 				wp_kses_post( $tags )
 			);
 		}

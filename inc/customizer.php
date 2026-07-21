@@ -21,17 +21,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 function open_zad_color_settings() {
 	return array(
 		'open_zad_color_primary' => array(
-			'label'   => __( 'Primary color', 'open-zad-theme' ),
+			'label'   => __( 'Primary color', 'open-zad' ),
 			'default' => '#2563eb',
 			'var'     => '--color-primary',
 		),
 		'open_zad_color_accent'  => array(
-			'label'   => __( 'Accent color', 'open-zad-theme' ),
+			'label'   => __( 'Accent color', 'open-zad' ),
 			'default' => '#7c3aed',
 			'var'     => '--color-accent',
 		),
 		'open_zad_color_text'    => array(
-			'label'   => __( 'Text color', 'open-zad-theme' ),
+			'label'   => __( 'Text color', 'open-zad' ),
 			'default' => '#1f2937',
 			'var'     => '--color-text',
 		),
@@ -101,7 +101,7 @@ function open_zad_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'open_zad_colors',
 		array(
-			'title'    => __( 'Theme Colors', 'open-zad-theme' ),
+			'title'    => __( 'Theme Colors', 'open-zad' ),
 			'priority' => 40,
 		)
 	);
@@ -141,8 +141,8 @@ function open_zad_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'open_zad_footer_credit',
 		array(
-			'label'       => __( 'Footer credit text', 'open-zad-theme' ),
-			'description' => __( 'Optional line shown next to the copyright in the footer.', 'open-zad-theme' ),
+			'label'       => __( 'Footer credit text', 'open-zad' ),
+			'description' => __( 'Optional line shown next to the copyright in the footer.', 'open-zad' ),
 			'section'     => 'title_tagline',
 			'type'        => 'text',
 		)

@@ -72,6 +72,20 @@ Registered in [`inc/block-styles.php`](inc/block-styles.php) and
 - **Block patterns** (under an "Open ZAD" category) — *Call to action card*
   and *Three-column features*, built from core blocks only.
 
+### Style previews
+
+**Bordered** quote — a sharp accent border on the inline-start edge:
+
+![Bordered quote style](docs/screenshots/style-bordered-quote.png)
+
+**Framed** image — a bordered, padded frame on a surface background:
+
+![Framed image style](docs/screenshots/style-framed-image.png)
+
+**Bordered card** group — a sharp border, surface background, and generous padding:
+
+![Bordered card group style](docs/screenshots/style-bordered-card.png)
+
 ### Pattern previews
 
 **Call to action card** — a heading, lead paragraph, and button inside the

@@ -22,7 +22,7 @@ msgstr ""
 
 #. Theme URI of the theme
 #: style.css
-msgid "https://zad.tools/open-zad-theme"
+msgid "https://github.com/zad-tools/open-zad-theme"
 msgstr ""
 
 #. Description of the theme

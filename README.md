@@ -72,6 +72,18 @@ Registered in [`inc/block-styles.php`](inc/block-styles.php) and
 - **Block patterns** (under an "Open ZAD" category) — *Call to action card*
   and *Three-column features*, built from core blocks only.
 
+### Pattern previews
+
+**Call to action card** — a heading, lead paragraph, and button inside the
+*Bordered card* group style:
+
+![Call to action card pattern](docs/screenshots/pattern-call-to-action.png)
+
+**Three-column features** — three equal columns, each with a heading and short
+description:
+
+![Three-column features pattern](docs/screenshots/pattern-three-columns.png)
+
 ## Local development
 
 The stylesheet is compiled from Tailwind CSS. The compiled

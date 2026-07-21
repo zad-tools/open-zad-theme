@@ -31,6 +31,7 @@ rsync -a "${REPO_ROOT}/" "${STAGE}/" \
 	--exclude "node_modules" \
 	--exclude "dist" \
 	--exclude "bin" \
+	--exclude "docs" \
 	--exclude "README.md" \
 	--exclude "package-lock.json" \
 	--exclude ".DS_Store"

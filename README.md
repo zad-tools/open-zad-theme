@@ -4,7 +4,7 @@ A fast, accessible, **RTL-first** WordPress theme with a clean, utilitarian
 design system configured entirely from the Customizer — no page builder, no
 admin console, no external requests.
 
-![Version](https://img.shields.io/badge/version-1.0.1-2563eb)
+![Version](https://img.shields.io/badge/version-1.0.2-2563eb)
 ![WordPress](https://img.shields.io/badge/WordPress-6.5%2B-21759b)
 ![PHP](https://img.shields.io/badge/PHP-8.0%2B-777bb4)
 ![License](https://img.shields.io/badge/license-GPL--2.0--or--later-3fb950)
